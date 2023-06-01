@@ -2,7 +2,7 @@
 This is a group project in development with the aim of participating in the Hackaton program and developing the FrontEnd part.
 
 <h1>Estado del proyecto:</h1>
-  :construction: Proyecto en construcción, BACKEND :construction:
+  :construction: Proyecto en construcción, FRONT-END :construction:
   
   
   
