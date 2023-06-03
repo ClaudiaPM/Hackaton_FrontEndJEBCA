@@ -1,0 +1,12 @@
+{
+  "name": "hackaton_frontendjebca",
+  "version": "1.0.0",
+  "description": "This is a group project in development with the aim of participating in the Hackaton program and developing the FrontEnd part.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
