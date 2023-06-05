@@ -1,1 +1,209 @@
-<h1>REGISTER</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="fondo-bg">
+    <Section class="contenedor centro">
+        <div class="global-container">
+            <div class="login-form">
+                <h3>Registrate</h3>
+                <form>
+                    <legend>Ingresa tus datos a continuacion</legend>
+                    <div class="flex">
+                        <div class="full">
+                            <label For="nombre" class="label-lg">
+                            Nombre
+                            </label>
+                            <div class="mt-2">
+                            <input
+                                id="nombre"
+                                name="nombre"
+                                type="text"
+                                autoComplete="nombre"
+                                required
+                                class="input-lg"
+                                placeholder="Escriba su nombre"
+                            />
+                            </div>
+                        </div>
+                        <div class="full">
+                            <label For="apellidos" class="label-lg">
+                            Apellidos
+                            </label>
+                            <div class="mt-2">
+                            <input
+                                id="apellidos"
+                                name="apellidos"
+                                type="text"
+                                autoComplete="apellidos"
+                                required
+                                class="input-lg"
+                                placeholder="Escriba sus apellidos"
+                            />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label-lg" for="email">Correo Electronico</label>
+                        <input 
+                        id="email"
+                        name="email"
+                        type="email" 
+                        class="input-lg"
+                        placeholder="Tu correo electronico"
+                        required 
+                        >
+                    </div>
+
+                    <div class="flex">
+                        <div class="full form-group"">
+                            <label For="sexo" class="label-lg">
+                            Sexo
+                            </label>
+                            <div>
+                                <select 
+                                    class="input-lg"
+                                    id="sexo"
+                                    required
+                                >
+                                    <option value="0">-- Seleccione --</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="femenino">Femenino</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="full form-group">
+                            <label For="edad" class="label-lg">
+                            Edad
+                            </label>
+                            <div class="mt-2">
+                            <input
+                                id="edad"
+                                name="edad"
+                                type="number"
+                                autoComplete="edad"
+                                required
+                                class="input-lg"
+                                placeholder="Tu edad"
+                            />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="full form-group">
+                              <label For="telefono" class="label-lg">
+                              Telefono
+                              </label>
+                              <div class="mt-2">
+                              <input
+                                  id="telefono"
+                                  name="telefono"
+                                  type="number"
+                                  autoComplete="telefono"
+                                  required
+                                  class="input-lg"
+                                  placeholder="Tu telefono"
+                              />
+                              </div>
+                          </div>
+                          <div class="full form-group">
+                              <label For="departamento" class="label-lg">
+                              Departamento
+                              </label>
+                              <div>
+                                <select 
+                                    class="input-lg"
+                                    id="departamento"
+                                    required
+                                >
+                                    <option value="0">-- Seleccione --</option>
+                                    <option value="ahuachapan">Ahuachapán</option>
+                                    <option value="santaana">Santa Ana</option>
+                                    <option value="sonsonate">Sonsonate</option>
+                                    <option value="lalibertad">La Libertad</option>
+                                    <option value="chalatenango">Chalatenango</option>
+                                    <option value="cuscatlan">Cuscatlán</option>
+                                    <option value="sansalvador">San Salvador</option>
+                                    <option value="lapaz">La Paz</option>
+                                    <option value="cabañas">Cabañas</option>
+                                    <option value="sanvicente">San Vicente</option>
+                                    <option value="usulutan">Usulután</option>
+                                    <option value="sanmiguel">San Miguel</option>
+                                    <option value="morazan">Morazán</option>
+                                    <option value="launion">La Unión</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label For="comunidad" class="label-lg">
+                          Comunidad
+                        </label>
+                        <div>
+                          <input
+                            id="comunidad"
+                            name="comunidad"
+                            type="text"
+                            required
+                            class="input-lg"
+                            placeholder="Tu comunidad"
+                          />
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label 
+                            class="label-lg" 
+                            for="contraseña"
+                        >
+                            Contraseña
+                        </label>
+                        <input 
+                            type="password" 
+                            class="input-lg" 
+                            id="contraseña"
+                            required
+                            placeholder="ingresa tu contraseña"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label 
+                            class="label-lg" 
+                            for="contraseña"
+                        >
+                            Confirmar Contraseña
+                        </label>
+                        <input 
+                            type="password" 
+                            class="input-lg" 
+                            id="contraseña"
+                            required
+                            placeholder="Confirma tu contraseña"
+                        >
+                    </div>
+                    <button 
+                        type="submit" 
+                        class="btn"
+                    >
+                        Registrarse
+                    </button>
+                    <div class="sign-up">
+                        Ya tienes una cuenta? 
+                        <a class="enlace-lg" href="/login">Inicia Sesion</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </Section>
+</body>
+</html>

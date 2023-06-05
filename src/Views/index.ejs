@@ -7,28 +7,24 @@
     <title>Salud Comunitaria JEBCA</title>
     <%- include('parts/head') %>
 </head>
-<body class="container">
-<div class="bg-image">
-    <div class="container">
-        <div class="row">
-            <div class="col align-item-center text-center">
-                <h1 class="h1_salud">SALUD</h1>
-                <h1 class="h1_comunitaria">COMUNITARIA</h1>
-                <h3 class="h3_texto">Juntos por una Comunidad Saludable</h3>
-                <h3 class="h3_texto">Cuidemonos, Apoyemonos</h3>
-                <h3 class="h3_texto">¡Vivamos Mejor!</h3>
-                <br>
-                <hr>
-                <br>
-                <a class="btn" href="/Login" target="_parent">Ingresar</a>
-                <a class="btn" href="/Register" target="_parent">Registrar</a>
-            </div>
-            <div class="col text-center">
-                <img src="doctor01.png" class="img-fluid">
-            </div>
+<body class="container imagen-bg centrar">
+    <div class="presentacion">
+        <div>
+              <h1>Salud</h1>
+              <p class="titulo">Comunitaria</p>
+
+              <p class="eslogan">"Juntos por una comunidad saludable: </p>
+              <p class="eslogan">Cuidémonos, apoyémonos, ¡Vivamos mejor!"</p>
+        </div>
+        <div class="botones">
+                <a href='/login'>
+                    Iniciar Sesion
+                </a>
+                <a class="registro" href='/register'>
+                    Registrarse
+                </a>
         </div>
     </div>
-</div>
     <%- include('parts/footer') %>
 </body>
 </html>

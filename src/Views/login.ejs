@@ -1,1 +1,59 @@
-<h1>LOGIN</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="fondo-bg">
+    <Section class="contenedor centro">
+        <div class="global-container">
+            <div class="login-form">
+                <h3>Inicia Sesion</h3>
+                    <form>
+                        <legend>Ingresa tus datos a continuacion</legend>
+                        <div class="form-group">
+                            <label class="label-lg" for="email">Correo Electronico</label>
+                            <input 
+                            id="email"
+                            name="email"
+                            type="email" 
+                            class="input-lg"
+                            placeholder="Tu correo electronico"
+                            required 
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label 
+                                class="label-lg" 
+                                for="contraseña"
+                            >
+                                Contraseña
+                            </label>
+                            <input 
+                                type="password" 
+                                class="input-lg" 
+                                id="contraseña"
+                                required
+                                placeholder="ingresa tu contraseña"
+                            >
+                        </div>
+                        <button 
+                            type="submit" 
+                            class="btn"
+                        >
+                            Iniciar Sesion
+                        </button>
+                        <div class="sign-up">
+                            No tienes una cuenta? 
+                            <a class="enlace-lg" href="/register">Crea una cuenta</a>
+                        </div>
+                    </form>
+            </div>
+        </div>
+        </div>
+    </Section>
+</body>
+</html>
