@@ -1,0 +1,46 @@
+<%- include('parts/header') %>
+<%- include('parts/aside') %>
+<head>
+    <title>Listado Pacientes</title>
+    <link rel="stylesheet" href="entorno.css">
+</head>
+  <div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+            <h1>Listado de Pacientes</h1>
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Los usuarios son los siguientes</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body centro">
+              <table id="example2" class="table table-bordered">
+                <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Direccion</th>
+                  <th>Telefono</th>
+                  <th>Opcion</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>${paciente.nombre}</td>
+                  <td>${paciente.apellido}</td>
+                  <td>${paciente.direccion}</td>
+                  <td>${paciente.telefono}</td>
+                  <td>
+                    <a href="/perfilpaciente"
+                        class="btn"
+                    >
+                        ver perfil
+                  </a>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
