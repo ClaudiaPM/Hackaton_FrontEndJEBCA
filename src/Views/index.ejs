@@ -17,14 +17,64 @@
               <p class="eslogan">Cuidémonos, apoyémonos, ¡Vivamos mejor!"</p>
         </div>
         <div class="botones">
-                <a href='/login'>
+                <a href='/Login' data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Iniciar Sesion
                 </a>
-                <a class="registro" href='/register'>
+                <a class="Registro" href='/register'>
                     Registrarse
                 </a>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="login-form">
+                    <h3>Inicia Sesion</h3>
+                        <form>
+                            <legend>Ingresa tus datos a continuacion</legend>
+                            <div class="form-group">
+                                <label class="label-lg" for="email">Correo Electronico</label>
+                                <input 
+                                id="email"
+                                name="email"
+                                type="email" 
+                                class="input-lg"
+                                placeholder="Tu correo electronico"
+                                required 
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label 
+                                    class="label-lg" 
+                                    for="contraseña"
+                                >
+                                    Contraseña
+                                </label>
+                                <input 
+                                    type="password" 
+                                    class="input-lg" 
+                                    id="contraseña"
+                                    required
+                                    placeholder="ingresa tu contraseña"
+                                >
+                            </div>
+                            <button 
+                                type="submit" 
+                                class="btn"
+                            >
+                                Iniciar Sesion
+                            </button>
+                            <div class="sign-up">
+                                No tienes una cuenta? 
+                                <a class="enlace-lg" href="/Register">Crea una cuenta</a>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <%- include('parts/footer') %>
 </body>
 </html>
